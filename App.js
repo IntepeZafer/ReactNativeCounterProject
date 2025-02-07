@@ -5,6 +5,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import CourseScreen from './Screen/CourseScreen/CourseScreen';
 import HomeScreen from './Screen/HomeScreen/HomeScreen';
 import CounterScreen from './Screen/CounterScreen/CounterScreen';
+import RandomColor from './Screen/RandomColor/RandomColor';
 
 export default function App() {
   
@@ -16,6 +17,7 @@ export default function App() {
         <Stack.Screen name="CourseScreen" component={CourseScreen} />
         <Stack.Screen name="CoursesInformation" component={CoursesInformation} />
         <Stack.Screen name="CounterScreen" component={CounterScreen} />
+        <Stack.Screen name="RandomColor" component={RandomColor} />
       </Stack.Navigator>
     </NavigationContainer>
   );

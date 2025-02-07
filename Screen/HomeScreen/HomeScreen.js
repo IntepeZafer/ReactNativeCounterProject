@@ -18,6 +18,9 @@ export default function HomeScreen({ navigation }) {
         <Text style={styles.buttonText}>Go To CounterScreen</Text>
       </TouchableOpacity>
 
+      <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('RandomColor')}>
+        <Text style={styles.buttonText}>Go To RandomColor</Text>
+      </TouchableOpacity>
     </View>
   )
 }
