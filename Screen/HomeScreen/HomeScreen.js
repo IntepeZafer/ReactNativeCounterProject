@@ -21,6 +21,10 @@ export default function HomeScreen({ navigation }) {
       <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('RandomColor')}>
         <Text style={styles.buttonText}>Go To RandomColor</Text>
       </TouchableOpacity>
+
+      <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('CounterScreenAndUseReducer')}>
+      <Text style={styles.buttonText}>Go To CounterScreenAndUseReducer</Text>
+      </TouchableOpacity>
     </View>
   )
 }
@@ -42,7 +46,7 @@ const styles = StyleSheet.create({
   },
   buttonText: {
     color: 'white',
-    fontSize: 16,
+    fontSize: 12,
     fontWeight: 'bold',
     letterSpacing: 1.5,
     textTransform: 'uppercase',

@@ -1,3 +1,4 @@
+import CounterScreenAndUseReducer from './Screen/CounterScreenAndUseReducer/CounterScreenAndUseReducer';
 import CoursesInformation from './Screen/CourseInformation/CoursesInformation';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { StyleSheet, Text, View, FlatList } from 'react-native';
@@ -6,6 +7,8 @@ import CourseScreen from './Screen/CourseScreen/CourseScreen';
 import HomeScreen from './Screen/HomeScreen/HomeScreen';
 import CounterScreen from './Screen/CounterScreen/CounterScreen';
 import RandomColor from './Screen/RandomColor/RandomColor';
+
+
 
 export default function App() {
   
@@ -18,6 +21,7 @@ export default function App() {
         <Stack.Screen name="CoursesInformation" component={CoursesInformation} />
         <Stack.Screen name="CounterScreen" component={CounterScreen} />
         <Stack.Screen name="RandomColor" component={RandomColor} />
+        <Stack.Screen name='CounterScreenAndUseReducer' component={CounterScreenAndUseReducer}/>
       </Stack.Navigator>
     </NavigationContainer>
   );
